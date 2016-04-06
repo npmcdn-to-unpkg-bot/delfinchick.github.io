@@ -1,0 +1,505 @@
+@charset "UTF-8";
+/* line 5, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 21, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'roboto_regular';
+  src: url("../fonts/roboto_regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto_bold';
+  src: url("../fonts/roboto_bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 1, ../../../components/sass/_base.scss */
+html {
+  font-size: 62.5%;
+  /*1rem ╤Б╤В╨░╨╜╨╛╨▓╨╕╤В╤Б╤П ╤А╨░╨▓╨╜╤Л╨╝ 10px*/
+  box-sizing: border-box;
+}
+
+/* line 6, ../../../components/sass/_base.scss */
+body {
+  font-family: 'roboto_regular';
+  background: #F5F6F7;
+  color: #999999;
+  font-size: 1.4rem;
+  /*14px*/
+}
+
+/* line 13, ../../../components/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'roboto_regular';
+  color: #999999;
+  font-weight: bold;
+}
+
+/* line 19, ../../../components/sass/_base.scss */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+/* line 2, ../../../components/sass/_mixins.scss */
+.container:before, .container:after {
+  content: '';
+  display: table;
+}
+/* line 7, ../../../components/sass/_mixins.scss */
+.container:after {
+  clear: both;
+}
+
+/* line 27, ../../../components/sass/_base.scss */
+.container__flex {
+  display: flex;
+}
+
+/* line 31, ../../../components/sass/_base.scss */
+.wrapper {
+  margin: 70px auto 50px;
+}
+
+/* line 35, ../../../components/sass/_base.scss */
+a, a:hover, a:focus {
+  text-decoration: none;
+  color: #666666;
+}
+
+/* line 40, ../../../components/sass/_base.scss */
+p, li {
+  color: #999999;
+}
+
+/* line 44, ../../../components/sass/_base.scss */
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* line 1, ../../../components/sass/modules/_header.scss */
+.header__shadow {
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* line 4, ../../../components/sass/modules/_header.scss */
+.header__outer {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+}
+
+/* line 10, ../../../components/sass/modules/_header.scss */
+.header__inner {
+  background: #F5F6F7;
+  margin: 0px auto;
+}
+
+/* line 15, ../../../components/sass/modules/_header.scss */
+.main-title {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 16.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  min-width: 185px;
+  float: left;
+  flex: 0 0 auto;
+}
+
+/* line 21, ../../../components/sass/modules/_header.scss */
+.offers {
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 83.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  justify-content: space-between;
+  flex: 1 1 auto;
+}
+
+/* line 1, ../../../components/sass/modules/_sidebar.scss */
+.sidebar {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 16.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  min-width: 185px;
+  flex: 0 0 auto;
+  order: 1;
+}
+
+/* line 8, ../../../components/sass/modules/_sidebar.scss */
+.sidebar__title {
+  padding-bottom: 15px;
+}
+
+/* --------- price --------- */
+/* line 13, ../../../components/sass/modules/_sidebar.scss */
+.price {
+  margin-bottom: 15px;
+}
+
+/* line 17, ../../../components/sass/modules/_sidebar.scss */
+select {
+  background: none;
+  width: 180px;
+  height: 35px;
+  padding: 8px;
+  color: #999999;
+  position: relative;
+  z-index: 100;
+  border: none;
+  outline: none;
+}
+
+/* line 29, ../../../components/sass/modules/_sidebar.scss */
+.sidebar__select-option {
+  background-color: #F5F6F7;
+  color: #999999;
+  display: block;
+  padding: 5px;
+  text-align: center;
+}
+
+/* line 37, ../../../components/sass/modules/_sidebar.scss */
+select:hover, select:active, select:visited {
+  color: #333333;
+  outline: none;
+}
+
+/* line 42, ../../../components/sass/modules/_sidebar.scss */
+.sidebar__select {
+  border-radius: 3px;
+  border: 1px solid #999999;
+  width: 160px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 50, ../../../components/sass/modules/_sidebar.scss */
+.sidebar__select:hover {
+  border: 1px solid #333333;
+}
+
+/* line 54, ../../../components/sass/modules/_sidebar.scss */
+.sidebar__select-button {
+  background: url("../images/svg/down.svg") center center no-repeat;
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 50;
+}
+
+/* --------- checkboxes --------- */
+/* line 66, ../../../components/sass/modules/_sidebar.scss */
+.filter {
+  border-top: 1px solid #DCDCDD;
+  padding: 10px 0;
+}
+
+/* line 70, ../../../components/sass/modules/_sidebar.scss */
+.filter__checkboxes-item {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* line 75, ../../../components/sass/modules/_sidebar.scss */
+.filter__checkboxes .filter__checkboxes-input {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+/* line 80, ../../../components/sass/modules/_sidebar.scss */
+.filter__checkboxes .filter__checkboxes-input:checked + .filter__checkboxes-elem:after {
+  opacity: 1;
+}
+/* line 86, ../../../components/sass/modules/_sidebar.scss */
+.filter__checkboxes .filter__checkboxes-elem {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background: #666666;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  display: inline-block;
+  vertical-align: middle;
+  border: 0 none;
+  position: relative;
+}
+/* line 96, ../../../components/sass/modules/_sidebar.scss */
+.filter__checkboxes .filter__checkboxes-elem:after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  background-clip: padding-box;
+  background: url(../images/svg/check_white.svg) 0 0 no-repeat;
+}
+/* line 106, ../../../components/sass/modules/_sidebar.scss */
+.filter__checkboxes .filter__checkboxes-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #666666;
+  max-width: 100px;
+  margin-left: 8px;
+}
+
+/*CONTENT*/
+/* line 2, ../../../components/sass/modules/_content.scss */
+.content {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 83.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  flex: 1 1 auto;
+  order: 2;
+}
+
+/* line 7, ../../../components/sass/modules/_content.scss */
+.content__cards {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* line 11, ../../../components/sass/modules/_content.scss */
+.card {
+  width: calc(33% - 1.6rem);
+  background: #ffffff;
+  margin-bottom: 3.2rem;
+  border-radius: 3px;
+  transition: all .2s ease-in-out;
+}
+/* line 17, ../../../components/sass/modules/_content.scss */
+.card:hover {
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+@media (min-width: 650px) and (max-width: 960px) {
+  /* line 11, ../../../components/sass/modules/_content.scss */
+  .card {
+    width: calc(50% - 0.8rem);
+  }
+}
+
+/* line 27, ../../../components/sass/modules/_content.scss */
+.card li, h2, p {
+  margin-left: 10px;
+  padding: 5px 0;
+}
+
+/* line 31, ../../../components/sass/modules/_content.scss */
+.card p {
+  margin-top: -40px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'roboto_bold';
+  font-size: 2rem;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* line 39, ../../../components/sass/modules/_content.scss */
+.card li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*PAGINATION*/
+/* line 44, ../../../components/sass/modules/_content.scss */
+.pagination {
+  text-align: left;
+}
+
+/* line 48, ../../../components/sass/modules/_content.scss */
+.pagination__list {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 52, ../../../components/sass/modules/_content.scss */
+.pagination__item {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 62, ../../../components/sass/modules/_content.scss */
+.pagination__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+/* line 70, ../../../components/sass/modules/_content.scss */
+.pagination__link:hover {
+  border: 1px solid #999999;
+}
+/* line 74, ../../../components/sass/modules/_content.scss */
+.pagination__link.active {
+  border: 1px solid #999999;
+}
+
+/* line 79, ../../../components/sass/modules/_content.scss */
+.pagination__mark {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  line-height: 35px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #666666;
+}
+
+/* line 1, ../../../components/sass/modules/_footer.scss */
+.footer {
+  padding-bottom: 30px;
+}
+
+/* line 4, ../../../components/sass/modules/_footer.scss */
+.footer__left {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 16.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  min-width: 185px;
+  flex: 0 0 auto;
+}
+
+/* line 9, ../../../components/sass/modules/_footer.scss */
+.footer__right {
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 83.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  justify-content: space-between;
+  flex: 0 0 auto;
+}
+
+/* line 15, ../../../components/sass/modules/_footer.scss */
+.footer__nav-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}

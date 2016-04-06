@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Autohub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!--[if lt IE 7]>
+    <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
+  <![endif]-->
+
+  <header class="header__outer">
+    <div class="header__inner">
+      <div class="container container__flex">
+        <div class="main-title"><a href="#"><img src="images/svg/logo.svg" alt="Автохаб"></a></div>
+        <div class="offers container__flex">
+            <div class="offers__quantity">Найдено 5 658 предложений</div>
+            <div class="affers__addnew"><a href="#">Разместить предложение</a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <div class="wrapper">
+    <main class="container container__flex">
+        <div class="sidebar">
+          <div class="price">
+            <div class="sidebar__title">Цена</div>
+
+            <div class="sidebar__select">
+              <select  id="selectitem" class="sidebar__select-elem">
+                <option class="sidebar__select-option" value="5000$">от 5 000$</option>
+                <option class="sidebar__select-option" value="1000$">от 10 000$</option>
+              </select>
+              <a class="sidebar__select-button"></a>
+            </div>
+
+            <div class="sidebar__select">
+              <select  id="selectitem" class="sidebar__select-elem">
+                <option class="sidebar__select-option" value="70000$">до 70 000$</option>
+                <option class="sidebar__select-option" value="70000$">до 80 000$</option>
+              </select>
+              <a class="sidebar__select-button"></a>
+            </div>
+
+
+          </div>
+
+
+          <div class="filter">
+            <div class="sidebar__title">Марка</div>
+            <div class="filter__content">
+              <ul class="filter__checkboxes">
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Alfa Romeo</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Audi</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">BMW</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Chevrolet</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Citroen</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Flat</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Ford</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Honda</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Hyondai</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Infinity</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Kia</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Land Rover</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Lexus</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Mazda</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Mercedes-Benz</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Mitsubishi</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Nissan</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Opel</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Peugeot</div>
+                  </label>  
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Porsche</div>
+                  </label>   
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Renault</div>
+                  </label>  
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">SEAT</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Skoda</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Subaru</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Suzuki</div>
+                  </label>    
+                </li>
+
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Toyota</div>
+                  </label>    
+                </li>
+                
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Volkswagen</div>
+                  </label>    
+                </li>
+                
+                <li class="filter__checkboxes-item">
+                  <label class="filter__checkboxes-label">
+                    <input type="checkbox" class="filter__checkboxes-input">
+                    <div class="filter__checkboxes-elem"></div>
+                    <div class="filter__checkboxes-text">Volvo</div>
+                  </label>    
+                </li>
+                
+
+              </ul>
+                  
+            </div>
+          </div>
+
+        </div>
+        <div class="content">
+            <section class="content__cards container__flex">
+                  <article class="card container__flex">
+                      <a href="#">
+                          <picture class="thumbnail">
+                              <img src="images/img_1.png" alt="Car number 1">
+                              <p>39 500$</p>
+                          </picture>
+                          <div class="card__content">
+                              <h2>Mercedes CL350</h2>
+                              <ul class="card__content-desctiption">
+                                <li>2013</li>
+                                <li>47 000 км</li>
+                                <li>Бензин 3.5</li>
+                                <li>А</li>
+                              </ul>
+                          </div><!-- .card__content -->
+                      </a>
+                  </article><!-- .card -->
+
+                  <article class="card">
+                      <a href="#">
+                          <picture class="thumbnail">
+                              <img src="images/img_2.png" alt="Car number 2">
+                              <p>9 450$</p>
+                          </picture>
+                          <div class="card__content">
+                              <h2>Alfa Romeo MiTo</h2>
+                              <ul class="card__content-desctiption">
+                                <li>2010</li>
+                                <li>139 087 км</li>
+                                <li>Бензин 1.4</li>
+                                <li>М</li>
+                              </ul>
+                          </div><!-- .card__content -->
+                      </a>
+                  </article><!-- .card -->
+
+                  <article class="card">
+                      <a href="#">
+                          <picture class="thumbnail">
+                              <img src="images/img_3.png" alt="Car number 3">
+                              <p>16 000$</p>
+                          </picture>
+                          <div class="card__content">
+                              <h2>Walkswagen Passat CC</h2>
+                              <ul class="card__content-desctiption">
+                                <li>2011</li>
+                                <li>53 000 км</li>
+                                <li>Бензин 2.0</li>
+                                <li>А</li>
+                              </ul>
+                          </div><!-- .card__content -->
+                      </a>
+                  </article><!-- .card -->
+
+                  <article class="card">
+                      <a href="#">
+                          <picture class="thumbnail">
+                              <img src="images/img_4.png" alt="Car number 4">
+                              <p>18 100$</p>
+                          </picture>
+                          <div class="card__content">
+                              <h2>Volvo XC60</h2>
+                              <ul class="card__content-desctiption">
+                                <li>2010</li>
+                                <li>88 000 км</li>
+                                <li>Бензин 2.0</li>
+                                <li>А</li>
+                              </ul>
+                          </div><!-- .card__content -->
+                      </a>
+                  </article><!-- .card -->
+
+                  <article class="card">
+                      <a href="#">
+                          <picture class="thumbnail">
+                              <img src="images/img_5.png" alt="Car number 5">
+                              <p>16 300$</p>
+                          </picture>
+                          <div class="card__content">
+                              <h2>Ford Fusion SE15</h2>
+                              <ul class="card__content-desctiption">
+                                <li>2013</li>
+                                <li>13 000 км</li>
+                                <li>Бензин 1.6</li>
+                                <li>А</li>
+                              </ul>
+                          </div><!-- .card__content -->
+                      </a>
+                  </article><!-- .card -->
+
+                  <article class="card">
+                      <a href="#">
+                          <picture class="thumbnail">
+                              <img src="images/img_6.png" alt="Car number 6">
+                              <p>32 900$</p>
+                          </picture>
+                          <div class="card__content">
+                              <h2>Audi A8</h2>
+                              <ul class="card__content-desctiption">
+                                <li>2011</li>
+                                <li>89 000 км</li>
+                                <li>Дизель 4.0</li>
+                                <li>А</li>
+                              </ul>
+                          </div><!-- .card__content -->
+                      </a>
+                  </article><!-- .card -->
+
+                  <article class="card">
+                      <a href="#">
+                          <picture class="thumbnail">
+                              <img src="images/img_7.png" alt="Car number 7">
+                              <p>21 900$</p>
+                          </picture>
+                          <div class="card__content">
+                              <h2>Mercedes GL500 4Matic</h2>
+                              <ul class="card__content-desctiption">
+                                <li>2007</li>
+                                <li>12 5000 км</li>
+                                <li>Бензин 5.5</li>
+                                <li>А</li>
+                              </ul>
+                          </div><!-- .card__content -->
+                      </a>
+                  </article><!-- .card -->
+
+                  <article class="card">
+                      <a href="#">
+                          <picture class="thumbnail">
+                              <img src="images/img_8.png" alt="Car number 8">
+                              <p>65 500$</p>
+                          </picture>
+                          <div class="card__content">
+                              <h2>Porche Macan S</h2>
+                              <ul class="card__content-desctiption">
+                                <li>2014</li>
+                                <li>9 700 км</li>
+                                <li>Бензин 3.0</li>
+                                <li>А</li>
+                              </ul>
+                          </div><!-- .card__content -->
+                      </a>
+                  </article><!-- .card -->
+                  
+                  <article class="card">
+                      <a href="#">
+                          <picture class="thumbnail">
+                              <img src="images/img_9.png" alt="Car number 9">
+                              <p>6 000$</p>
+                          </picture>
+                          <div class="card__content">
+                              <h2>Audi A8</h2>
+                              <ul class="card__content-desctiption">
+                                <li>2008</li>
+                                <li>86 200 км</li>
+                                <li>Бензин 1.2</li>
+                                <li>А</li>
+                              </ul>
+                          </div><!-- .card__content -->
+                      </a>
+                  </article><!-- .card -->
+
+                  <article class="card">
+                      <a href="#">
+                          <picture class="thumbnail">
+                              <img src="images/img_1.png" alt="Car number 1">
+                              <p>39 500$</p>
+                          </picture>
+                          <div class="card__content">
+                              <h2>Mercedes CL350</h2>
+                              <ul class="card__content-desctiption">
+                                <li>2013</li>
+                                <li>47 000 км</li>
+                                <li>Бензин 3.5</li>
+                                <li>А</li>
+                              </ul>
+                          </div><!-- .card__content -->
+                      </a>
+                  </article><!-- .card -->
+
+                  <article class="card">
+                      <a href="#">
+                          <picture class="thumbnail">
+                              <img src="images/img_2.png" alt="Car number 2">
+                              <p>9 450$</p>
+                          </picture>
+                          <div class="card__content">
+                              <h2>Alfa Romeo MiTo</h2>
+                              <ul class="card__content-desctiption">
+                                <li>2010</li>
+                                <li>139 087 км</li>
+                                <li>Бензин 1.4</li>
+                                <li>М</li>
+                              </ul>
+                          </div><!-- .card__content -->
+                      </a>
+                  </article><!-- .card -->
+
+                  <article class="card">
+                      <a href="#">
+                          <picture class="thumbnail">
+                              <img src="images/img_3.png" alt="Car number 3">
+                              <p>16 000$</p>
+                          </picture>
+                          <div class="card__content">
+                          <h2>Walkswagen Passat CC</h2>
+                          <ul class="card__content-desctiption">
+                                <li>2011</li>
+                                <li>53 000 км</li>
+                                <li>Бензин 2.0</li>
+                                <li>А</li>
+                              </ul>
+                          </div><!-- .card__content -->
+                      </a>
+                  </article><!-- .card -->
+
+              </section><!-- .cards -->
+          <div class="pagination">
+
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link active">
+                    <div class="pagination__mark">1</div></a></li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">
+                    <div class="pagination__mark">2</div></a></li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">
+                    <div class="pagination__mark">3</div></a></li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">
+                    <div class="pagination__mark">4</div></a></li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">
+                    <div class="pagination__mark">5</div></a></li>
+              </ul>
+
+          </div>
+
+        </div>  
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="container container__flex">
+      <div class="footer__left">&copy; Автохаб 2016</div>
+      <div class="footer__right container__flex">
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Правовое соглашение</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Tехническая поддержка</a>
+          </li>
+        </ul>
+        <div class="footer__copywright">
+          Сделано в <a href="http://skrotskystudio.com/">Студии Вадима Скротского</a>
+        </div> 
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
