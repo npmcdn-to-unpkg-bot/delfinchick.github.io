@@ -1,22 +1,93 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var $ = require('jquery');
 var jQuery = $;
-$(document).ready(function() {
-  var header = $(".header__outer");
-  var link = $("a");
+var PopUp = (function(){
 
-  link.on("click", function(e){
-  	e.preventDefault();
-  });
+//Инициализирует наш модуль
+	var init = function(){
+		$("#popup").hide();
+		_setUpListeners();
+		//то, что должно произойти сразу
+		};
 
-  $(window).on("scroll", function() {
-    header.addClass("header__shadow");
-    if ($("body").scrollTop() === 0) {
-    	header.removeClass("header__shadow");
-    }
-  });
+//Прослушивает события
+	var _setUpListeners=function(){
+		$('.card').on('click', _showModal);//открываем модальное окно
+		$('#popup').on('click', _hideModal);//прячем модальное окно
+		};
 
-});
+//Работает с модальным окном
+	var _showModal = function(e){
+		e.preventDefault();//сброс начальных настроек для ссылки на попап
+		$("#popup").show();
+	};
+
+	var _hideModal = function(e){
+		e.preventDefault();
+		$("#popup").hide();
+	};
+
+
+//Возвращаем объект(публичные методы)
+	return {
+		init:init,
+	};
+})();
+PopUp.init();
+var Scroll = (function(){
+
+//Инициализирует наш модуль
+	var init = function(){
+		_setUpListeners();
+		//то, что должно произойти сразу
+		};
+
+//Прослушивает события
+	var _setUpListeners=function(){
+		$(window).on('scroll', _headerShadow);
+		//$('a').on('click', _stopDefault);
+		};
+		
+//Работа c функциями
+	var _headerShadow = function(){
+		var header = $(".header__outer");
+		header.addClass("header__shadow");
+	    if ($("body").scrollTop() === 0) {
+	    	header.removeClass("header__shadow");
+	    }
+	}
+
+//Возвращаем объект(публичные методы)
+	return {
+		init:init,
+	};
+})();
+Scroll.init();
+var myModule = (function(){
+
+//Инициализирует наш модуль
+  var init = function(){
+    _setUpListeners();
+    //то, что должно произойти сразу
+    };
+
+//Прослушивает события
+  var _setUpListeners = function(){
+    $('a').on('click', _stopDefault);
+    };
+
+//Работа c функциями
+  var _stopDefault = function(e){
+    e.preventDefault();//сброс начальных настроек объекта события
+
+  };
+
+//Возвращаем объект(публичные методы)
+  return {
+    init:init,
+  };
+})();
+myModule.init();
 },{"jquery":2}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.2.2

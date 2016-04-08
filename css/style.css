@@ -142,9 +142,11 @@ a, a:hover, a:focus {
 /* line 40, ../../../components/sass/_base.scss */
 p, li {
   color: #999999;
+  margin: 0;
+  padding: 0;
 }
 
-/* line 44, ../../../components/sass/_base.scss */
+/* line 46, ../../../components/sass/_base.scss */
 img {
   display: block;
   border: 0;
@@ -212,19 +214,25 @@ img {
   flex: 0 0 auto;
   order: 1;
 }
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 1, ../../../components/sass/modules/_sidebar.scss */
+  .sidebar {
+    display: none;
+  }
+}
 
-/* line 8, ../../../components/sass/modules/_sidebar.scss */
+/* line 11, ../../../components/sass/modules/_sidebar.scss */
 .sidebar__title {
   padding-bottom: 15px;
 }
 
 /* --------- price --------- */
-/* line 13, ../../../components/sass/modules/_sidebar.scss */
+/* line 16, ../../../components/sass/modules/_sidebar.scss */
 .price {
   margin-bottom: 15px;
 }
 
-/* line 17, ../../../components/sass/modules/_sidebar.scss */
+/* line 20, ../../../components/sass/modules/_sidebar.scss */
 select {
   background: none;
   width: 180px;
@@ -237,7 +245,7 @@ select {
   outline: none;
 }
 
-/* line 29, ../../../components/sass/modules/_sidebar.scss */
+/* line 32, ../../../components/sass/modules/_sidebar.scss */
 .sidebar__select-option {
   background-color: #F5F6F7;
   color: #999999;
@@ -246,13 +254,13 @@ select {
   text-align: center;
 }
 
-/* line 37, ../../../components/sass/modules/_sidebar.scss */
+/* line 40, ../../../components/sass/modules/_sidebar.scss */
 select:hover, select:active, select:visited {
   color: #333333;
   outline: none;
 }
 
-/* line 42, ../../../components/sass/modules/_sidebar.scss */
+/* line 45, ../../../components/sass/modules/_sidebar.scss */
 .sidebar__select {
   border-radius: 3px;
   border: 1px solid #999999;
@@ -261,12 +269,12 @@ select:hover, select:active, select:visited {
   position: relative;
 }
 
-/* line 50, ../../../components/sass/modules/_sidebar.scss */
+/* line 53, ../../../components/sass/modules/_sidebar.scss */
 .sidebar__select:hover {
   border: 1px solid #333333;
 }
 
-/* line 54, ../../../components/sass/modules/_sidebar.scss */
+/* line 57, ../../../components/sass/modules/_sidebar.scss */
 .sidebar__select-button {
   background: url("../images/svg/down.svg") center center no-repeat;
   position: absolute;
@@ -279,29 +287,29 @@ select:hover, select:active, select:visited {
 }
 
 /* --------- checkboxes --------- */
-/* line 66, ../../../components/sass/modules/_sidebar.scss */
+/* line 69, ../../../components/sass/modules/_sidebar.scss */
 .filter {
   border-top: 1px solid #DCDCDD;
   padding: 10px 0;
 }
 
-/* line 70, ../../../components/sass/modules/_sidebar.scss */
+/* line 73, ../../../components/sass/modules/_sidebar.scss */
 .filter__checkboxes-item {
   margin-bottom: 15px;
   position: relative;
 }
 
-/* line 75, ../../../components/sass/modules/_sidebar.scss */
+/* line 78, ../../../components/sass/modules/_sidebar.scss */
 .filter__checkboxes .filter__checkboxes-input {
   position: absolute;
   top: 0;
   left: -9999px;
 }
-/* line 80, ../../../components/sass/modules/_sidebar.scss */
+/* line 83, ../../../components/sass/modules/_sidebar.scss */
 .filter__checkboxes .filter__checkboxes-input:checked + .filter__checkboxes-elem:after {
   opacity: 1;
 }
-/* line 86, ../../../components/sass/modules/_sidebar.scss */
+/* line 89, ../../../components/sass/modules/_sidebar.scss */
 .filter__checkboxes .filter__checkboxes-elem {
   width: 20px;
   height: 20px;
@@ -316,8 +324,9 @@ select:hover, select:active, select:visited {
   vertical-align: middle;
   border: 0 none;
   position: relative;
+  cursor: pointer;
 }
-/* line 96, ../../../components/sass/modules/_sidebar.scss */
+/* line 100, ../../../components/sass/modules/_sidebar.scss */
 .filter__checkboxes .filter__checkboxes-elem:after {
   content: "";
   display: block;
@@ -336,7 +345,7 @@ select:hover, select:active, select:visited {
   background-clip: padding-box;
   background: url(../images/svg/check_white.svg) 0 0 no-repeat;
 }
-/* line 106, ../../../components/sass/modules/_sidebar.scss */
+/* line 110, ../../../components/sass/modules/_sidebar.scss */
 .filter__checkboxes .filter__checkboxes-text {
   display: inline-block;
   vertical-align: middle;
@@ -345,6 +354,7 @@ select:hover, select:active, select:visited {
   color: #666666;
   max-width: 100px;
   margin-left: 8px;
+  cursor: pointer;
 }
 
 /*CONTENT*/
@@ -366,8 +376,14 @@ select:hover, select:active, select:visited {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media (min-width: 0) and (max-width: 400px) {
+  /* line 7, ../../../components/sass/modules/_content.scss */
+  .content__cards {
+    justify-content: center;
+  }
+}
 
-/* line 11, ../../../components/sass/modules/_content.scss */
+/* line 14, ../../../components/sass/modules/_content.scss */
 .card {
   width: calc(33% - 1.6rem);
   background: #ffffff;
@@ -375,25 +391,31 @@ select:hover, select:active, select:visited {
   border-radius: 3px;
   transition: all .2s ease-in-out;
 }
-/* line 17, ../../../components/sass/modules/_content.scss */
+/* line 20, ../../../components/sass/modules/_content.scss */
 .card:hover {
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
   transform: scale(1.1);
 }
-@media (min-width: 650px) and (max-width: 960px) {
-  /* line 11, ../../../components/sass/modules/_content.scss */
+@media (min-width: 400px) and (max-width: 960px) {
+  /* line 14, ../../../components/sass/modules/_content.scss */
   .card {
     width: calc(50% - 0.8rem);
   }
 }
+@media (min-width: 0) and (max-width: 400px) {
+  /* line 14, ../../../components/sass/modules/_content.scss */
+  .card {
+    width: calc(90%);
+  }
+}
 
-/* line 27, ../../../components/sass/modules/_content.scss */
-.card li, h2, p {
+/* line 33, ../../../components/sass/modules/_content.scss */
+.card li, .card h2, .card p {
   margin-left: 10px;
   padding: 5px 0;
 }
 
-/* line 31, ../../../components/sass/modules/_content.scss */
+/* line 37, ../../../components/sass/modules/_content.scss */
 .card p {
   margin-top: -40px;
   margin-bottom: 20px;
@@ -403,25 +425,25 @@ select:hover, select:active, select:visited {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* line 39, ../../../components/sass/modules/_content.scss */
+/* line 45, ../../../components/sass/modules/_content.scss */
 .card li {
   display: inline-block;
   vertical-align: top;
 }
 
 /*PAGINATION*/
-/* line 44, ../../../components/sass/modules/_content.scss */
+/* line 50, ../../../components/sass/modules/_content.scss */
 .pagination {
   text-align: left;
 }
 
-/* line 48, ../../../components/sass/modules/_content.scss */
+/* line 54, ../../../components/sass/modules/_content.scss */
 .pagination__list {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 52, ../../../components/sass/modules/_content.scss */
+/* line 58, ../../../components/sass/modules/_content.scss */
 .pagination__item {
   width: 35px;
   height: 35px;
@@ -433,7 +455,7 @@ select:hover, select:active, select:visited {
   overflow: hidden;
 }
 
-/* line 62, ../../../components/sass/modules/_content.scss */
+/* line 68, ../../../components/sass/modules/_content.scss */
 .pagination__link {
   position: absolute;
   top: 0;
@@ -442,16 +464,16 @@ select:hover, select:active, select:visited {
   bottom: 0;
   display: block;
 }
-/* line 70, ../../../components/sass/modules/_content.scss */
+/* line 76, ../../../components/sass/modules/_content.scss */
 .pagination__link:hover {
   border: 1px solid #999999;
 }
-/* line 74, ../../../components/sass/modules/_content.scss */
+/* line 80, ../../../components/sass/modules/_content.scss */
 .pagination__link.active {
   border: 1px solid #999999;
 }
 
-/* line 79, ../../../components/sass/modules/_content.scss */
+/* line 85, ../../../components/sass/modules/_content.scss */
 .pagination__mark {
   top: 0;
   left: 0;
@@ -502,4 +524,105 @@ select:hover, select:active, select:visited {
   display: inline-block;
   vertical-align: top;
   margin-right: 15px;
+}
+
+/* line 1, ../../../components/sass/modules/_popup.scss */
+.b-popup {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(230, 230, 230, 0.8);
+  z-index: 1000;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+}
+
+/* line 10, ../../../components/sass/modules/_popup.scss */
+.b-popup .b-popup__content {
+  margin: 40px auto 0px auto;
+  width: 80%;
+  max-width: 500px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+/* line 18, ../../../components/sass/modules/_popup.scss */
+.b-popup__card {
+  width: 100%;
+}
+
+/* line 21, ../../../components/sass/modules/_popup.scss */
+.b-popup .b-popup__content, .b-popup__content li, .b-popup__content p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #666;
+}
+
+/* line 27, ../../../components/sass/modules/_popup.scss */
+.b-popup__description {
+  padding: 10px 2% 15px;
+}
+
+/* line 31, ../../../components/sass/modules/_popup.scss */
+.b-popup__info h2 {
+  font-family: 'roboto_bold';
+  font-size: 1.6rem;
+  color: #666;
+  margin-left: 0;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/* line 39, ../../../components/sass/modules/_popup.scss */
+.card__content-contact {
+  padding-top: 15px;
+}
+
+/* line 42, ../../../components/sass/modules/_popup.scss */
+.b-popup__info {
+  border-right: 1px solid #999999;
+  flex: 0 0 auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+
+/* line 47, ../../../components/sass/modules/_popup.scss */
+.b-popup__features {
+  flex: 1 1 auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 60%;
+  float: left;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: 1%;
+}
+
+/* line 53, ../../../components/sass/modules/_popup.scss */
+.b-popup__info, .b-popup__features {
+  padding-top: 10px;
+}
+
+/* line 56, ../../../components/sass/modules/_popup.scss */
+.b-popup__features-lists ul {
+  margin-right: 15%;
+  margin-bottom: 20px;
+}
+
+/* line 60, ../../../components/sass/modules/_popup.scss */
+.b-popup__features-lists ul:last-child {
+  margin-right: 0;
+}
+
+/* line 63, ../../../components/sass/modules/_popup.scss */
+.b-popup__features-lists ul .crossed {
+  text-decoration: line-through;
+  color: #999999;
 }
