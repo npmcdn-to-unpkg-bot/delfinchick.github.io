@@ -154,6 +154,16 @@ img {
   height: auto;
 }
 
+/* line 53, ../../../components/sass/_base.scss */
+.displaynone {
+  display: none !important;
+}
+
+/* line 56, ../../../components/sass/_base.scss */
+.displayblock {
+  display: block !important;
+}
+
 /* line 1, ../../../components/sass/modules/_header.scss */
 .header__shadow {
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
@@ -535,9 +545,10 @@ select:hover, select:active, select:visited {
   overflow: hidden;
   position: fixed;
   top: 0px;
+  display: none;
 }
 
-/* line 10, ../../../components/sass/modules/_popup.scss */
+/* line 11, ../../../components/sass/modules/_popup.scss */
 .b-popup .b-popup__content {
   margin: 40px auto 0px auto;
   width: 80%;
@@ -547,24 +558,24 @@ select:hover, select:active, select:visited {
   box-shadow: 0px 0px 10px #000;
 }
 
-/* line 18, ../../../components/sass/modules/_popup.scss */
+/* line 19, ../../../components/sass/modules/_popup.scss */
 .b-popup__card {
   width: 100%;
 }
 
-/* line 21, ../../../components/sass/modules/_popup.scss */
+/* line 22, ../../../components/sass/modules/_popup.scss */
 .b-popup .b-popup__content, .b-popup__content li, .b-popup__content p {
   font-size: 1.2rem;
   line-height: 2rem;
   color: #666;
 }
 
-/* line 27, ../../../components/sass/modules/_popup.scss */
+/* line 28, ../../../components/sass/modules/_popup.scss */
 .b-popup__description {
   padding: 10px 2% 15px;
 }
 
-/* line 31, ../../../components/sass/modules/_popup.scss */
+/* line 32, ../../../components/sass/modules/_popup.scss */
 .b-popup__info h2 {
   font-family: 'roboto_bold';
   font-size: 1.6rem;
@@ -574,12 +585,12 @@ select:hover, select:active, select:visited {
   text-align: left;
 }
 
-/* line 39, ../../../components/sass/modules/_popup.scss */
+/* line 40, ../../../components/sass/modules/_popup.scss */
 .card__content-contact {
   padding-top: 15px;
 }
 
-/* line 42, ../../../components/sass/modules/_popup.scss */
+/* line 43, ../../../components/sass/modules/_popup.scss */
 .b-popup__info {
   border-right: 1px solid #999999;
   flex: 0 0 auto;
@@ -592,7 +603,7 @@ select:hover, select:active, select:visited {
   padding-right: 0.83333%;
 }
 
-/* line 47, ../../../components/sass/modules/_popup.scss */
+/* line 48, ../../../components/sass/modules/_popup.scss */
 .b-popup__features {
   flex: 1 1 auto;
   -moz-box-sizing: border-box;
@@ -605,23 +616,23 @@ select:hover, select:active, select:visited {
   margin-left: 1%;
 }
 
-/* line 53, ../../../components/sass/modules/_popup.scss */
+/* line 54, ../../../components/sass/modules/_popup.scss */
 .b-popup__info, .b-popup__features {
   padding-top: 10px;
 }
 
-/* line 56, ../../../components/sass/modules/_popup.scss */
+/* line 57, ../../../components/sass/modules/_popup.scss */
 .b-popup__features-lists ul {
   margin-right: 15%;
   margin-bottom: 20px;
 }
 
-/* line 60, ../../../components/sass/modules/_popup.scss */
+/* line 61, ../../../components/sass/modules/_popup.scss */
 .b-popup__features-lists ul:last-child {
   margin-right: 0;
 }
 
-/* line 63, ../../../components/sass/modules/_popup.scss */
+/* line 64, ../../../components/sass/modules/_popup.scss */
 .b-popup__features-lists ul .crossed {
   text-decoration: line-through;
   color: #999999;

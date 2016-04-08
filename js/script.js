@@ -5,7 +5,6 @@ var PopUp = (function(){
 
 //Инициализирует наш модуль
 	var init = function(){
-		$("#popup").hide();
 		_setUpListeners();
 		//то, что должно произойти сразу
 		};
@@ -19,12 +18,12 @@ var PopUp = (function(){
 //Работает с модальным окном
 	var _showModal = function(e){
 		e.preventDefault();//сброс начальных настроек для ссылки на попап
-		$("#popup").show();
+		$("#popup").addClass('displayblock');
 	};
 
 	var _hideModal = function(e){
 		e.preventDefault();
-		$("#popup").hide();
+		$("#popup").removeClass('displayblock');
 	};
 
 
@@ -45,7 +44,6 @@ var Scroll = (function(){
 //Прослушивает события
 	var _setUpListeners=function(){
 		$(window).on('scroll', _headerShadow);
-		//$('a').on('click', _stopDefault);
 		};
 		
 //Работа c функциями
