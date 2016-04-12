@@ -24,7 +24,7 @@
 	<!--endbuild-->
 	<!--build:css css/main.css-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/about_me.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
 	<!--endbuild-->
 	<!--modernizr-->
 	<script src="bower/modernizer/modernizr.js"></script>	
@@ -62,9 +62,9 @@
 				<aside class="sidebar">
 					<nav class="navigation">
 						<ul class="navigation-list">
-		                	<li class="navigation-item current"><a href="/" class="navigation-link">Обо мне</a></li>
+		                	<li class="navigation-item"><a href="/" class="navigation-link">Обо мне</a></li>
 		                	<li class="navigation-item"><a href="/work.html" class="navigation-link">Мои работы</a></li>
-		                	<li class="navigation-item"><a href="/contact.html" class="navigation-link">Связаться со мной</a></li>
+		                	<li class="navigation-item current"><a href="/contact.html" class="navigation-link">Связаться со мной</a></li>
 	               		</ul>
                		</nav>
                		<address class="contacts">
@@ -78,81 +78,29 @@
 				</aside>
 	<!-- Изменяемый контент-->
 				<div class="variable-content">
-					<section class="aboutbox">
-							<h2 class="aboutbox-header">Основная информация</h2>
-							<div class="aboutbox-body clearfix">
-								<div class="image-wrap">
-									<div class="avatar-box">
-									<img src="img/face.jpg" alt="Борис Марухин" class="avatar">
-									</div>
+					<section class="contactbox">
+						<h2 class="contact-header">У вас интересный проект? Напишите мне</h2>
+						<div class="formfield clearfix">
+							<form name="feedback" role="form" id="contact-me">
+								<div class="leftnote">
+									<label for="name" class="note">Имя</label>
+									<input type="text" name="name" id="name" class="insidetext" qtip-position="left" qtip-content="Вы не ввели имя" placeholder="Как к Вам обращаться">
 								</div>
-								<div class="worksheet-wrap">
-									<ul class="about-list">
-										<li class="worksheet-item clearfix">
-											<div class="worksheet-what">Меня зовут:</div>
-											<div class="worksheet-info">Марухин Борис</div>
-										</li>
-										<li class="worksheet-item clearfix">
-											<div class="worksheet-what">Мой возраст:</div>
-											<div class="worksheet-info">25 лет</div>
-										</li>
-										<li class="worksheet-item clearfix">
-											<div class="worksheet-what">Мой город:</div>
-											<div class="worksheet-info">Минск, Беларусь</div>
-										</li>
-										<li class="worksheet-item clearfix">
-											<div class="worksheet-what">Моя специализация:</div>
-											<div class="worksheet-info">FRONTEND разработчик</div>
-										</li>
-										<li class="worksheet-item clearfix">
-											<div class="worksheet-what">Ключевые навыки:</div>
-											<div class="worksheet-info skills">
-												<ul class="skills-list">
-												<li class="skill-item">html</li>
-												<li class="skill-item">css</li>
-												<li class="skill-item">javascript</li>
-												<li class="skill-item">gulp</li>
-												<li class="skill-item">git</li>	
-												</ul>
-											</div>
-										</li>
-									</ul>
+								<div class="rightnote">
+								<label for="email" class="note ">Email</label>
+								<input type="email" name="email" id="email" class="insidetext" qtip-position="right" qtip-content="Вы не ввели email" placeholder="Куда мне писать">
 								</div>
-							</div>
-					</section>
-					<section class="aboutbox">
-						<h2 class="aboutbox-header">Опыт работы</h2>
-							<div class="aboutbox-body clearfix">
-								<div class="jobs-wrap">
-									<ul class="about-list">
-										<li class="about-item">
-											<div class="place work">Центр светодиодных и оптоэлектронных технологий
-												<p class="time">Декабрь 2012 - по настоящее время</p>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-					</section>
-					<section class="aboutbox">
-						<h2 class="aboutbox-header">Образование</h2>
-							<div class="aboutbox-body clearfix">
-								<div class="education-wrap">
-									<ul class="about-list">
-										<li class="about-item">
-											<div class="place education">Высшее. БГУИР
-												<p class="time">Сентябрь 2008 - июль 2013</p>
-											</div>
-										</li>
-										<li class="about-item ">
-											<div class="place course">Курсы Loftschool.ru
-												<p class="time">Сентябрь 2015 - по настоящее время</p>
-											</div>
-											
-										</li>
-									</ul>
-								</div>
-							</div>
+								<label for="message" class="note">Сообщение</label>
+								<textarea class="message" name="message" id="message" cols="30" rows="10" qtip-content="Что Вы от меня хотите?" placeholder="Кратко в чем суть"></textarea>
+								 <label for="captcha" class="note">Введите код, указанный на картинке</label>
+								<div class="captcha"></div>
+								<input qtip-content="Вы не ввели код" type="text" name="capcha" id="captcha" class="enterfield" qtip-position="right" placeholder="Введите код">
+								<div class="control">
+				                    <input type="submit" value="Отправить" class="button left">
+				                    <input type="reset" value="Очистить" class="button right">
+				                </div> 
+							</form>
+						</div>
 					</section>
 				</div> 
 			</div>
@@ -169,15 +117,16 @@
 	<!--build:js js/vendor.js-->
 	<!-- bower:js-->
 	<script src="bower/jquery/jquery.js"></script>
-	<script type="bower/jquery-placeholder/jquery.placeholder.js"></script>
 	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script type="bower/jquery-placeholder/jquery.placeholder.js"></script>
 	<!-- endbower-->
 	<!--endbuild-->
 	<!--build:js js/main.js-->
 	<script type="text/javascript" src="js/console-ie8.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/contact_me.js"></script>
 	<script type="text/javascript" src="js/placeholder.js"></script>
-	
+	<script type="text/javascript" src="js/validation.js"></script>
 	<!--endbuild-->
 </body>
 </html>
